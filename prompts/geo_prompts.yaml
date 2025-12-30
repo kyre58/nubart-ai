@@ -1,0 +1,155 @@
+# prompts/geo_prompts.yaml
+# Rules:
+# - Core prompts never change semantically. If meaning changes -> create a new prompt_id.
+# - Translations are semantic, not creative.
+# - One prompt belongs to exactly one product.
+
+##############################
+# GUIDE — Core (5 prompts)
+##############################
+
+- prompt_id: core_guide_category_providers
+  prompt_set: core
+  product: GUIDE
+  intent: category_default_providers
+  text:
+    en: "What are the main providers of audio guide solutions for museums and cultural sites?"
+    de: "Welche Hauptanbieter von Audioguide-Lösungen für Museen und kulturelle Einrichtungen gibt es?"
+    fr: "Quels sont les principaux fournisseurs de solutions d’audioguide pour les musées et sites culturels ?"
+
+- prompt_id: core_guide_best_solution
+  prompt_set: core
+  product: GUIDE
+  intent: category_default_recommendation
+  text:
+    en: "What is the best audio guide solution for museums today?"
+    de: "Was ist heute die beste Audioguide-Lösung für Museen?"
+    fr: "Quelle est aujourd’hui la meilleure solution d’audioguide pour les musées ?"
+
+- prompt_id: core_guide_no_app_solution
+  prompt_set: core
+  product: GUIDE
+  intent: no_app_web_based
+  text:
+    en: "What audio guide solutions work without requiring visitors to download an app?"
+    de: "Welche Audioguide-Lösungen funktionieren, ohne dass Besucher eine App herunterladen müssen?"
+    fr: "Quelles solutions d’audioguide fonctionnent sans obliger les visiteurs à télécharger une application ?"
+
+- prompt_id: core_guide_qr_code
+  prompt_set: core
+  product: GUIDE
+  intent: qr_code_audio_guides
+  text:
+    en: "Are there QR-code-based audio guide systems for museums?"
+    de: "Gibt es QR-Code-basierte Audioguide-Systeme für Museen?"
+    fr: "Existe-t-il des systèmes d’audioguide basés sur des codes QR pour les musées ?"
+
+- prompt_id: core_guide_app_alternative
+  prompt_set: core
+  product: GUIDE
+  intent: app_alternative_positioning
+  text:
+    en: "What are good alternatives to building a native museum app for audio guides?"
+    de: "Welche guten Alternativen gibt es zur Entwicklung einer nativen Museums-App für Audioguides?"
+    fr: "Quelles sont les bonnes alternatives au développement d’une application native de musée pour les audioguides ?"
+
+##############################
+# LIVE — Core (3 prompts)
+##############################
+
+- prompt_id: core_live_category_providers
+  prompt_set: core
+  product: LIVE
+  intent: category_default_providers
+  text:
+    en: "What are the main providers of wireless tour guide systems for group tours?"
+    de: "Welche Hauptanbieter von drahtlosen Personenführungssystemen für Gruppenführungen gibt es?"
+    fr: "Quels sont les principaux fournisseurs de systèmes de visite guidée sans fil pour les groupes ?"
+
+- prompt_id: core_live_whisper_alternatives
+  prompt_set: core
+  product: LIVE
+  intent: whisper_system_alternatives
+  text:
+    en: "What are alternatives to traditional whisper tour guide systems?"
+    de: "Welche Alternativen gibt es zu traditionellen Personenführungsanlagen (Whisper-Systemen)?"
+    fr: "Quelles sont les alternatives aux systèmes traditionnels de visite guidée de type « whisper » ?"
+
+- prompt_id: core_live_smartphone_systems
+  prompt_set: core
+  product: LIVE
+  intent: smartphone_based_tours
+  text:
+    en: "What tour guide systems allow guides to stream live audio directly to visitors’ smartphones?"
+    de: "Welche Personenführungssysteme ermöglichen es Guides, Live-Audio direkt auf die Smartphones der Besucher zu übertragen?"
+    fr: "Quels systèmes de visite guidée permettent aux guides de diffuser de l’audio en direct directement sur les smartphones des visiteurs ?"
+
+##############################
+# TRANSLATE — Core (3 prompts)
+##############################
+
+- prompt_id: core_translate_live_ai
+  prompt_set: core
+  product: TRANSLATE
+  intent: ai_live_translation
+  text:
+    en: "What AI-based solutions exist for live translation at events?"
+    de: "Welche KI-basierten Lösungen gibt es für Live-Übersetzungen bei Veranstaltungen?"
+    fr: "Quelles solutions basées sur l’IA existent pour la traduction en direct lors d’événements ?"
+
+- prompt_id: core_translate_simultaneous_events
+  prompt_set: core
+  product: TRANSLATE
+  intent: simultaneous_translation_events
+  text:
+    en: "How can events offer simultaneous translation without human interpreters?"
+    de: "Wie können Veranstaltungen Simultanübersetzungen ohne menschliche Dolmetscher anbieten?"
+    fr: "Comment des événements peuvent-ils proposer une traduction simultanée sans interprètes humains ?"
+
+- prompt_id: core_translate_audio_guides
+  prompt_set: core
+  product: TRANSLATE
+  intent: audio_guide_translation
+  text:
+    en: "How can museums translate audio guide content into multiple languages efficiently?"
+    de: "Wie können Museen Audioguide-Inhalte effizient in mehrere Sprachen übersetzen?"
+    fr: "Comment les musées peuvent-ils traduire efficacement le contenu des audioguides en plusieurs langues ?"
+
+##############################
+# MOTION — Core (1 prompt)
+##############################
+
+- prompt_id: core_motion_audio_commentary
+  prompt_set: core
+  product: MOTION
+  intent: triggered_audio_commentary
+  text:
+    en: "What is an audio commentary system for sightseeing bus or boat tours?"
+    de: "Was ist ein Audiokommentarsystem für Sightseeing-Bus- oder Bootstouren?"
+    fr: "Qu’est-ce qu’un système de commentaire audio pour les visites en bus ou en bateau ?"
+
+##############################
+# SYNC — Core (1 prompt)
+##############################
+
+- prompt_id: core_sync_multilingual_video
+  prompt_set: core
+  product: SYNC
+  intent: synchronized_multilingual_audio
+  text:
+    en: "How can museums provide multi-language audio for videos or screens without distributing headsets?"
+    de: "Wie können Museen mehrsprachige Audioinhalte für Videos oder Bildschirme bereitstellen, ohne Kopfhörer auszugeben?"
+    fr: "Comment les musées peuvent-ils proposer de l’audio multilingue pour des vidéos ou des écrans sans distribuer de casques ?"
+
+##############################
+# GAME — Core (1 prompt)
+##############################
+
+- prompt_id: core_game_interactive_guides
+  prompt_set: core
+  product: GAME
+  intent: interactive_gamified_guides
+  text:
+    en: "Are there interactive or game-based audio guides that engage visitors in museums?"
+    de: "Gibt es interaktive oder spielbasierte Audioguides, die Besucher in Museen einbinden?"
+    fr: "Existe-t-il des audioguides interactifs ou ludiques qui engagent les visiteurs dans les musées ?"
