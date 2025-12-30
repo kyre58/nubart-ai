@@ -6,7 +6,7 @@ from typing import Dict
 import requests
 
 API_URL = "https://api.openai.com/v1/responses"
-MODEL_NAME = "gpt-4.1"
+MODEL_NAME = "gpt-5.2"
 
 
 def run(prompt: str, language: str) -> Dict[str, str]:
