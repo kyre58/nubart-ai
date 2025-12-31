@@ -46,7 +46,7 @@ REPO_ROOT = Path(__file__).resolve().parent
 
 PROMPT_PATH = "prompts/geo_prompts.yaml"
 
-RAW_DATA_PATH = str(REPO_ROOT / "data" / "raw" / "geo_raw.csv")
+RAW_DATA_PATH = str(REPO_ROOT / "data" / "raw" / "geo_raw_api.csv")
 
 SUMMARY_DATA_PATH = str(REPO_ROOT / "data" / "summary" / "")
 
@@ -64,3 +64,22 @@ RUN_DATE_FORMAT = "%Y-%m-%d"
 # Detection should be simple and deterministic.
 
 BRAND_KEYWORD = "nubart"
+
+# -------------------------
+# Headers
+# -------------------------
+RAW_HEADERS = [
+	"run_id",
+	"run_date", 
+	"timestamp_utc",
+	"model",
+	"model_version",
+	"language",
+	"product",
+	"prompt_id",
+	"prompt_set",
+	"intent",
+	"prompt_text",
+	"response_text",
+	"error",
+]
